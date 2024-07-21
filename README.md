@@ -149,15 +149,21 @@ Check the application logs for errors:
 ```
 npm run start
 ```
+
 For any errors :
+
       - Look into the [Node.js documentation] or check relevant GitHub issues for solutions.
-      - Reference GitHub Link [Day-12 Deploying `Node.js` Application on AWS EC2 | Feat.[[ @kunal](https://github.com/verma-kunal](https://github.com/verma-kunal/AWS-Session))]
-      - Reference YouTube Video Link [Day-12 Deploying `Node.js` Application on AWS EC2 | [@AbhishekVeeramalla](https://youtu.be/NLmF64KdLN0?si=7TXILzusgqof6Oak) | Live Project]
+
+      - Reference GitHub Link [ Day-12 Deploying `Node.js` Application on AWS EC2 | Feat.[[ @kunal](https://github.com/verma-kunal](https://github.com/verma-kunal/AWS-Session)) ]
+
+      - Reference YouTube Video Link [ Day-12 Deploying `Node.js` Application on AWS EC2 | [@AbhishekVeeramalla](https://youtu.be/NLmF64KdLN0?si=7TXILzusgqof6Oak) | Live Project ]
+
 
 ### 5] ScreenShots(Output)
 
 ![Screenshot (609)](https://github.com/user-attachments/assets/d19f8f60-98a9-4262-a852-0bdd44c7dbf9)
 
 ![Screenshot (610)](https://github.com/user-attachments/assets/d2a1da32-2866-43b8-87c5-64a89603005a)
+
 
 ### Congratulations! 🎉 We’ve successfully deployed a Node.js application on AWS EC2.
