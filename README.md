@@ -151,9 +151,9 @@ npm run start
 ```
 
 For any errors :
-      - Look into the [Node.js documentation] or check relevant GitHub issues for solutions.
-      - Reference GitHub Link [ Day-12 Deploying `Node.js` Application on AWS EC2 | Feat.[[ @kunal](https://github.com/verma-kunal](https://github.com/verma-kunal/AWS-Session)) ]
-      - Reference YouTube Video Link [ Day-12 Deploying `Node.js` Application on AWS EC2 | [@AbhishekVeeramalla](https://youtu.be/NLmF64KdLN0?si=7TXILzusgqof6Oak) | Live Project ]
+  - Look into the [Node.js documentation] or check relevant GitHub issues for solutions.
+  - Reference GitHub Link [ Day-12 Deploying `Node.js` Application on AWS EC2 | Feat.[[ @kunal](https://github.com/verma-kunal](https://github.com/verma-kunal/AWS-Session)) ]
+  - Reference YouTube Video Link [ Day-12 Deploying `Node.js` Application on AWS EC2 | [@AbhishekVeeramalla](https://youtu.be/NLmF64KdLN0?si=7TXILzusgqof6Oak) | Live Project ]
 
 
 ### 5] ScreenShots(Output)
