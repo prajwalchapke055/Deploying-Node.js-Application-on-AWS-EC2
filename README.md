@@ -3,7 +3,7 @@ Demonstrates deploying a Node.js application on AWS, covering EC2 setup, IAM, en
 
 ### 1] Set Up an AWS EC2 Instance
 
-a.  Create an IAM User & Log in to Your AWS Console
+  a.  Create an IAM User & Log in to Your AWS Console
 
 Go to the IAM Console.
   - Click on Users on the sidebar, then click Add user.
@@ -15,7 +15,7 @@ Go to the IAM Console.
 Log in to the AWS Console
   - Use the IAM user credentials you just created.
 
-b.  Create an EC2 Instance
+  b.  Create an EC2 Instance
 
   - Navigate to EC2 Dashboard.
   - Click Launch Instance.
@@ -33,7 +33,7 @@ b.  Create an EC2 Instance
   - Review and launch the instance.
   - Select the key pair you created earlier and acknowledge that you have access to the key.
 
-c.  Connect to Your EC2 Instance
+  c.  Connect to Your EC2 Instance
 
 Open the terminal and use the following command to connect :
 ```
@@ -44,48 +44,48 @@ Replace /path/to/your/keypair.pem with the path to your `.pem` file and <IP_ADDR
 
 ### 2] Configuring Ubuntu on the Remote VM
 
-a.  Update Packages and Install Dependencies
+  a.  Update Packages and Install Dependencies
 ```
 sudo apt update
 ```
-b.  Install Git
+  b.  Install Git
 ```
 sudo apt install git
 ```
-c.  Verify Installation
+  c.  Verify Installation
 ```
 git --version
 ```
-d.  Install Node.js
+  d.  Install Node.js
 ```
 sudo apt install nodejs
 ```
-e.  Verify Node.js Installation
+  e.  Verify Node.js Installation
 ```
 node -v
 ```
-f.  Install npm (Node Package Manager)
+  f.  Install npm (Node Package Manager)
 ```
 sudo apt install npm
 ```
-g.  Verify npm Installation:
+  g.  Verify npm Installation:
 ```
 npm --version
 ```
 
-▪ References:
+  ▪ References:
       - Install Git - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-22-04)
       - Configure Node.js and `npm` - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
 
 
 ### 3] Deploying the Node.js Project on AWS
 
-a.  Clone Your Project
+  a.  Clone Your Project
 ```
 git clone [https://github.com/prajwalchapke055/Deploying-Node.js-Application-on-AWS-EC2.git]
 ```
 
-b.  Set Up Environment Variables - Navigate to the Project Directory - 
+  b.  Set Up Environment Variables - Navigate to the Project Directory - 
 ```
 cd AWS-Session
 ```
@@ -113,7 +113,7 @@ Get Stripe API Keys:
   - Navigate to Developers → API Keys to get your Publishable Key and Secret Key.
   - Update .env file with your Stripe keys and domain.
 
-c.  Initialize and Start the Project
+  c.  Initialize and Start the Project
 Install Dependencies:
 ```
 npm install
@@ -123,7 +123,7 @@ Start the Application:
 npm run start
 ```
 
-d.  Update Security Group Rules
+  d.  Update Security Group Rules
 Go to EC2 Dashboard:
   - Select Instances and find your instance.
   - Click on the Security tab and then Edit inbound rules.
@@ -133,7 +133,7 @@ Go to EC2 Dashboard:
     - Source: Anywhere (0.0.0.0/0)
     - Save the rules.
 
-e. Access Your Node.js Application
+  e. Access Your Node.js Application
 Open a browser and visit:
 ```
 http://<YOUR_ELASTIC_IP>:3000
