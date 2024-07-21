@@ -1,7 +1,7 @@
 # Deploying-Node.js-Application-on-AWS-EC2
 Demonstrates deploying a Node.js application on AWS, covering EC2 setup, IAM, environment variables, and scalability tips for beginners.
 
-### Set Up an AWS EC2 Instance
+### 1] Set Up an AWS EC2 Instance
 
 a.  Create an IAM User & Log in to Your AWS Console
 
@@ -42,7 +42,7 @@ ssh -i /path/to/your/keypair.pem ubunutu@<IP_ADDRESS>
 Replace /path/to/your/keypair.pem with the path to your `.pem` file and <IP_ADDRESS> with the public IP address of your EC2 instance.
 
 
-### Configuring Ubuntu on the Remote VM
+### 2] Configuring Ubuntu on the Remote VM
 
 a.  Update Packages and Install Dependencies
 ```
@@ -78,7 +78,7 @@ npm --version
       - Configure Node.js and `npm` - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
 
 
-### Deploying the Node.js Project on AWS
+### 3] Deploying the Node.js Project on AWS
 
 a.  Clone Your Project
 ```
@@ -141,7 +141,7 @@ http://<YOUR_ELASTIC_IP>:3000
 Replace <YOUR_ELASTIC_IP> with the Elastic IP address associated with your EC2 instance.
 
 
-### Troubleshooting
+### 4] Troubleshooting
 If you can’t access your application:
   - Ensure the security group rules are correctly configured.
   - Verify that the `.env` file contains the correct environment variables.
@@ -150,11 +150,11 @@ Check the application logs for errors:
 npm run start
 ```
 For any errors :
-    - Look into the [Node.js documentation] or check relevant GitHub issues for solutions.
-    - Reference GitHub Link [Day-12 Deploying `Node.js` Application on AWS EC2 | Feat.[[ @kunal](https://github.com/verma-kunal](https://github.com/verma-kunal/AWS-Session))]
-    - Reference YouTube Video Link [Day-12 Deploying `Node.js` Application on AWS EC2 | [@AbhishekVeeramalla](https://youtu.be/NLmF64KdLN0?si=7TXILzusgqof6Oak) | Live Project]
+      - Look into the [Node.js documentation] or check relevant GitHub issues for solutions.
+      - Reference GitHub Link [Day-12 Deploying `Node.js` Application on AWS EC2 | Feat.[[ @kunal](https://github.com/verma-kunal](https://github.com/verma-kunal/AWS-Session))]
+      - Reference YouTube Video Link [Day-12 Deploying `Node.js` Application on AWS EC2 | [@AbhishekVeeramalla](https://youtu.be/NLmF64KdLN0?si=7TXILzusgqof6Oak) | Live Project]
 
-### ScreenShots(Output)
+### 5] ScreenShots(Output)
 
 ![Screenshot (609)](https://github.com/user-attachments/assets/d19f8f60-98a9-4262-a852-0bdd44c7dbf9)
 
