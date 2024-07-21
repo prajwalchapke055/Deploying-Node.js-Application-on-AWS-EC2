@@ -6,34 +6,35 @@ Demonstrates deploying a Node.js application on AWS, covering EC2 setup, IAM, en
 a.  Create an IAM User & Log in to Your AWS Console
 
 Go to the IAM Console.
-Click on Users on the sidebar, then click Add user.
-Enter a username.
-Select Access type: Choose Password.
-Attach permissions: Select Attach existing policies directly and choose AdministratorAccess to give full access.
-Complete the steps and save your Access Key ID and Secret Access Key for future use.
+  - Click on Users on the sidebar, then click Add user.
+  - Enter a username.
+  - Select Access type: Choose Password.
+  - Attach permissions: Select Attach existing policies directly and choose AdministratorAccess to give full access.
+  - Complete the steps and save your Access Key ID and Secret Access Key for future use.
 
 Log in to the AWS Console
-Use the IAM user credentials you just created.
+  - Use the IAM user credentials you just created.
 
 b.  Create an EC2 Instance
 
-Navigate to EC2 Dashboard.
-Click Launch Instance.
-Configure Instance :
-  - Region : Select N. Virginia (us-east-1).
-  - Name : Enter Demo-nodejs.
-  - Amazon Machine Image (AMI) : Choose Ubuntu Server 22.04 LTS.
-  - Instance Type : Select t2.micro (Free Tier eligible).
-  - Key Pair : Create a new key pair - Give it a name and download the `.pem` file. Save it securely, as it’s needed for SSH access.
-  - Configure Security Group : Create a new Security Group with the following inbound rule -
-      - Type: SSH
-      - Protocol: TCP
-      - Port Range: 22
-      - Source: Anywhere (0.0.0.0/0)
-Review and launch the instance.
-Select the key pair you created earlier and acknowledge that you have access to the key.
+  - Navigate to EC2 Dashboard.
+  - Click Launch Instance.
+  - Configure Instance :
+      - Region : Select N. Virginia (us-east-1).
+      - Name : Enter Demo-nodejs.
+      - Amazon Machine Image (AMI) : Choose Ubuntu Server 22.04 LTS.
+      - Instance Type : Select t2.micro (Free Tier eligible).
+      - Key Pair : Create a new key pair - Give it a name and download the `.pem` file. Save it securely, as it’s needed for SSH access.
+      - Configure Security Group : Create a new Security Group with the following inbound rule -
+          - Type: SSH
+          - Protocol: TCP
+          - Port Range: 22
+          - Source: Anywhere (0.0.0.0/0)
+  - Review and launch the instance.
+  - Select the key pair you created earlier and acknowledge that you have access to the key.
 
 c.  Connect to Your EC2 Instance
+
 Open the terminal and use the following command to connect :
 ```
 ssh -i /path/to/your/keypair.pem ubunutu@<IP_ADDRESS>
@@ -73,8 +74,9 @@ npm --version
 ```
 
 ▪ References:
-    - Install Git - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-22-04) 
-    - Configure Node.js and `npm` - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
+      - Install Git - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-22-04)
+      - Configure Node.js and `npm` - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
+
 
 ### Deploying the Node.js Project on AWS
 
@@ -107,7 +109,7 @@ SECRET_KEY="sk_test_XXXX"
 ```
 
 Get Stripe API Keys:
-  - Go to Stripe and create an account. [Stripe Link]([https://stripe.com/in])
+  - Go to Stripe and create an account. [Stripe Link](https://stripe.com/in)
   - Navigate to Developers → API Keys to get your Publishable Key and Secret Key.
   - Update .env file with your Stripe keys and domain.
 
@@ -138,6 +140,7 @@ http://<YOUR_ELASTIC_IP>:3000
 ```
 Replace <YOUR_ELASTIC_IP> with the Elastic IP address associated with your EC2 instance.
 
+
 ### Troubleshooting
 If you can’t access your application:
   - Ensure the security group rules are correctly configured.
@@ -146,10 +149,10 @@ Check the application logs for errors:
 ```
 npm run start
 ```
-For any errors:
-Look into the [Node.js documentation] or check relevant GitHub issues for solutions.
-Reference GitHub Link [Day-12 Deploying `Node.js` Application on AWS EC2 | Feat.[[ @kunal](https://github.com/verma-kunal](https://github.com/verma-kunal/AWS-Session))]
-Reference YouTube Video Link [Day-12 Deploying `Node.js` Application on AWS EC2 | [@AbhishekVeeramalla](https://youtu.be/NLmF64KdLN0?si=7TXILzusgqof6Oak) | Live Project]
+For any errors :
+    - Look into the [Node.js documentation] or check relevant GitHub issues for solutions.
+    - Reference GitHub Link [Day-12 Deploying `Node.js` Application on AWS EC2 | Feat.[[ @kunal](https://github.com/verma-kunal](https://github.com/verma-kunal/AWS-Session))]
+    - Reference YouTube Video Link [Day-12 Deploying `Node.js` Application on AWS EC2 | [@AbhishekVeeramalla](https://youtu.be/NLmF64KdLN0?si=7TXILzusgqof6Oak) | Live Project]
 
 ### ScreenShots(Output)
 
